@@ -45,7 +45,7 @@ function printItem(num) {
             }
 
             // make stars for last line
-            for (let m = 0; m < num * 2 - 1; m++) {
+            for (let l = 0; l < num * 2 - 1; l++) {
                 lastLine += "*";
             }
             // assign a last line with a star

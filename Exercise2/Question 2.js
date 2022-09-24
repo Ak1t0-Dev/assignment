@@ -3,7 +3,7 @@ let numList = [1, 2, 3, 4, 5, 6];
 
 function arraySum(numList) {
     let sum = 0;
-    for (i = 0; i < numList.length; i++) {
+    for (let i = 0; i < numList.length; i++) {
         sum += numList[i];
     }
 
