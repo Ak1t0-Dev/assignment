@@ -15,15 +15,24 @@
 
 */
 function printItem(num) {
-    let item = "";
-
+    let item = '';
+    
+    // adding stars till num
     for (let i = 0; i < num; i++) {
-        item += "*";
+        item += '*';
         console.log(item);
     }
-    for (let j = num - 1; j > 0; j--) {
-        item = item.slice(1);
+    item = '';
+    
+    // lessen stars till 1
+    for (let j = 1; j < num; j++) {
+        for (let k = num; k > j; k--) {
+            item += '*';
+        }
+
         console.log(item);
+
+        item = '';
     }
 }
 

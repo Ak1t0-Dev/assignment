@@ -27,7 +27,7 @@ function printItem(num) {
             // assign a first line with a star
             item = firstLine + star + '\n';
 
-            // make blanks and stars second line to num - 1 line
+            // make blanks and stars second line to before the last line
             for (let i = 1; i < num - 1; i++) {
                 let blank = '';
                 let blankInside = '';
@@ -55,7 +55,7 @@ function printItem(num) {
         } else { // if num = 1 than output a star
             console.log(star);
         }
-    } else { // if it is not a number or num = 0
+    } else { // if it is not a number or num < 0
         console.log("enter the number more than 0");
     }
 }
