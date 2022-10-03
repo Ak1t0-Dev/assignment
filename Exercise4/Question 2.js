@@ -13,13 +13,13 @@ function duplicatesArrayInSorted(array) {
     }
 
     if (flag == true) {
-        console.log(message1);
+        return message1;
     } else {
-        console.log(message2);
+        return message2;
     }
 
 
 }
 
-duplicatesArrayInSorted([2, 2, 12, 13, 40, 50]); // duplicated (given array should be sorted)
-duplicatesArrayInSorted([1, 2, 12, 13, 40, 50]); // not duplicated (given array should be sorted)
+console.log(duplicatesArrayInSorted([2, 2, 12, 13, 40, 50])); // duplicated (given array should be sorted)
+console.log(duplicatesArrayInSorted([1, 2, 12, 13, 40, 50])); // not duplicated (given array should be sorted)
