@@ -81,7 +81,7 @@ function addNodeAtIndex(head, n, val) {
     // add the node at n index
     let current = head;
 
-    for (let i = 0; i < n - 1; i++) {
+    for (let i = 0; i < n; i++) {
         current = current.next;
     }
 
