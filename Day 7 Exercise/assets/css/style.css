@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: #666666;
+}
+
+header,
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+span {
+    color: darkorange;
+}
+
+.nav {
+    margin: 4px;
+}
+
+.nav:hover {
+    color: darkorange;
+}
+
+.container {
+    text-align: center;
+}
+
+.container-top,
+.container-middle {
+    padding: 18px;
+}
+
+button {
+    padding: 8px;
+    margin: 18px 18px 0px 18px;
+}
+
+.image-size {
+    height: 35px;
+    width: 35px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.logo-title {
+    font-weight: bold;
+}
+
+.explain-content {
+    padding: 24px;
+}
+
+.container-top {
+    background-image: url("../image/camp.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+} @media screen and (min-width: 420px) {
+    .container-top {
+        height: 400px;
+    }
+} @media screen and (min-width: 800px) {
+    .container-top {
+        height: 500px;
+    }
+}
+
+.container-detail {
+    color: black;
+}
+
+#location,
+#campfire {
+    background-color: white;
+}
+
+#tent {
+    background-color: darkorange;
+}
+
+.copy-right {
+    margin: 25px;
+}
