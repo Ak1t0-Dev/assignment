@@ -17,6 +17,17 @@ form {
     margin: 32px;
 }
 
+.card-info label {
+    position: relative;
+}
+
+.fa-user {
+    color: rgb(189, 187, 187);
+    position: absolute;
+    top: 22px;
+    right: 12px;
+}
+
 #card-front {
     background-color: #f0f0ed;
     width: 428px;
@@ -26,6 +37,10 @@ form {
     border: 2px solid rgb(189, 187, 187);
     box-shadow: 2px 2px 4px rgb(224, 223, 223);
     position: relative;
+}
+
+.fa-user {
+    position: absolute;
 }
 
 #valid-thru {
@@ -44,7 +59,6 @@ form {
 input {
     margin: 8px 0px;
     font-size: 16px;
-    height: 40px;
     border: 3px solid lightgray;
 }
 
@@ -64,7 +78,6 @@ input {
 
 input.input-main {
     width: 100%;
-    height: 40px;
 }
 
 input.input-thru {
@@ -96,13 +109,12 @@ input {
     display: inline-block;
 }
 
-#holder:hover::placeholder {
-    color: black;
-}
-
-
 input:hover {
     border-color: rgb(255, 221, 0);
+}
+
+#holder:hover ~ .fa-user {
+    color: black;
 }
 
 /* ----------------------------------------------- */
@@ -114,27 +126,22 @@ input:hover {
     padding-top: 40px;
     position: absolute;
     top: 60px;
-    left: 176px;
+    left: 170px;
     z-index: -1;
 }
 
 .back-reader {
     width: 100%;
     background-color: gray;
-    height: 25%;
+    height: 28%;
 }
 
 #card-back .cvc-info {
     text-align: right;
-    padding-right: 16px; 
+    padding-right: 32px; 
 }
 
 #cvc {
-    width: 20%;
+    width: 22%;
     margin-top: 40px;
-    z-index: 9999;
-}
-
-.cvc-info {
-    z-index: 9999;
 }
