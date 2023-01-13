@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1322d173d9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="submit">
+        <div id="card-front">
+            <div class="card-info">
+                <label for="holder"><input type="text" id="holder"
+                        placeholder="Holder of card                                                    &#xf007"
+                        class="input-main" style="font-family:Arial, FontAwesome"></label>
+                <label for="number"><input type="text" id="number" placeholder="" class="input-main"></label>
+            </div>
+            <span id="valid-thru">VALID THRU</span>
+            <div class="month-year">
+                <div class="mm-yy">
+                    <label for="month"><input type="text" id="month" placeholder="MM" class="input-thru"></label>
+                    <span>/</span>
+                    <label for="year"><input type="text" id="year" placeholder="YY" class="input-thru"></label>
+                </div>
+                <div class="credit">
+                    <img src="img/Mastercard_icon-icons.com_60554.svg" alt="mastercard">
+                    <img src="img/Visa_icon-icons.com_60549.svg" alt="visa">
+                </div>
+            </div>
+        </div>
+        <div id="card-back">
+            <div class="back-reader">
+            </div>
+            <div class="cvc-info">
+                <label for="cvc"><input type="text" id="cvc" placeholder="CVC"
+                        class="input-main"></label>
+            </div>
+        </div>
+        <input id="send-button" type="button" value="Send" href="">
+    </form>
+</body>
+
+</html>
