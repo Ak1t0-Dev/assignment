@@ -1,0 +1,47 @@
+@import "modules/mixin";
+@import "modules/variable";
+@import "modules/typography";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    @include flexContainer(column);
+    margin: 20px;
+    article {
+        margin: 20px;
+        
+        h3 {
+            text-align: center;
+            margin-bottom: 8px;
+        }
+        img {
+            width: 100%;
+        }
+
+        p {
+            margin-top: 8px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 6;
+            -webkit-box-orient: vertical;
+            display: -webkit-box;
+        }
+    }
+}
+
+// TABLET VIEW*****
+@media (min-width: 700px) {
+    @import "screens/tablet"; 
+}
+
+
+// 
+// DESKTOP VIEW*****
+@media (min-width: 1280px) {
+    @import "screens/desktop";
+}

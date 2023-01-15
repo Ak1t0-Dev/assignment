@@ -1,0 +1,54 @@
+.items-container {
+    @include gridContainer(repeat(3, 33%), flex-start, flex-start);
+}
+
+header {
+    nav {
+        ul {
+            @include flexContainer;
+            justify-content: center;
+            margin: 20px;
+        }
+    }
+}
+
+.article-container {
+    @include gridContainer(repeat(2, 2fr), flex-start, flex-start);
+}
+
+#article-1 {
+    @include gridArticleContainer;   
+    h3 {
+        grid-area: 1 / 2 / 2 / 3;
+        margin: auto 0px;
+        text-align: left;
+    }
+
+    .picture {
+        grid-area: 1 / 1 / 3 / 2;
+        padding: 8px;
+    }
+
+
+    .paragraph {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+}
+
+#article-2 {
+    @include gridArticleContainer;   
+    h3 {
+        grid-area: 1 / 1 / 2 / 2;
+        margin: auto 0px;
+        text-align: left;
+    }
+
+    .picture {
+        grid-area: 1 / 2 / 3 / 3;
+        padding: 8px;
+    }
+
+    .paragraph {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+}
