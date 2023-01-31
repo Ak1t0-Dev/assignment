@@ -15,19 +15,23 @@ function addTask(event) {
 
     if (taskItem.value.length > 0) {
 
-        // check if there are same task
-        if (checkTask(taskItem.value)) {
+        if (newTask.completionDate !== "") {
+            // check if there are same task
+            if (checkTask(taskItem.value)) {
 
-            newTask.title = taskItem.value;
-            // We are creating a new object with a new memory
-            let modifiedTask = JSON.parse(JSON.stringify(newTask));
-            // We will push object now
-            taskList.push(modifiedTask);
-            taskListCopy = JSON.parse(JSON.stringify(taskList));
-            taskItem.value = "";
-            showList();
+                newTask.title = taskItem.value;
+                // We are creating a new object with a new memory
+                let modifiedTask = JSON.parse(JSON.stringify(newTask));
+                // We will push object now
+                taskList.push(modifiedTask);
+                taskListCopy = JSON.parse(JSON.stringify(taskList));
+                taskItem.value = "";
+                showList();
+            } else {
+                alert("You cannot add a similar task which you've aleady added");
+            }
         } else {
-            alert("You cannot add a similar task which you've aleady added");
+            alert("Please select a date!");
         }
     } else {
         alert("Please enter a value, to add!");
@@ -85,7 +89,6 @@ function showList() {
 function setDate(event) {
     newTask.completionDate = event.target.value;
 }
-
 
 // ------------------------------------------------------------------------------
 // search tasks by title
