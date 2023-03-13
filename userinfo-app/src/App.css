@@ -1,0 +1,12 @@
+.usercard-container {
+  display: flex;
+  gap: 60px;
+  padding: 16px;
+  overflow: scroll;
+}
+
+.main {
+  display: grid;
+  grid-template-areas: "header" "usercard-container" "footer";
+  grid-template-rows: 10vh 80vh 10vh;
+}

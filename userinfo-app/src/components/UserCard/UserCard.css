@@ -1,0 +1,10 @@
+.userCard {
+    width: 300px;
+    height: 500px;
+    border: 3px solid black;
+    padding: 0 1rem;
+}
+
+img {
+    border: 1px solid gray;
+}
